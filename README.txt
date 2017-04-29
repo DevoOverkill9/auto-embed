@@ -7,3 +7,4 @@ Usage :
 #chmod +x auto-embed.sh
 #./auto-embed.sh
 
+![Tool Banner](http://oi67.tinypic.com/nvcs9y.jpg)
