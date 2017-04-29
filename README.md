@@ -5,9 +5,9 @@ Important: You need to be root to use this tool
 
 # Usage : 
  chmod +x auto-embed.sh
- ./auto-embed.sh
-or:
- bash auto-embed.sh
+     ./auto-embed.sh
+   or:
+     bash auto-embed.sh
 
 ![Tool Banner](http://oi67.tinypic.com/nvcs9y.jpg)
 
