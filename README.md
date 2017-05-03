@@ -4,11 +4,17 @@ This tool is embeds an android application with a msfvenom payload by using a em
 Important: You need to be root to use this tool
 
 # Usage : 
+ ```bash
  chmod +x auto-embed.sh
-     ./auto-embed.sh
-   or:
-     bash auto-embed.sh
+  ```
+ ```bash    
+ ./auto-embed.sh
+```  
+or:
 
+```bash
+bash auto-embed.sh
+```
 ![Tool Banner](http://oi67.tinypic.com/nvcs9y.jpg)
 
 You don't need to make the app like app.apk // it will be ok to write the app name only without any formats.
